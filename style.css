@@ -57,6 +57,7 @@ img {
     url("../fonts/lato-bold-webfont.ttf") format("truetype"),
     url("../fonts/lato-bold-webfont.svg") format("svg");
 }
+
 /*----------------------------------------header-styles---------------------------------------*/
 #header {
   background-color: #eeebec;
@@ -363,6 +364,7 @@ img {
   position: relative;
   width: 100%;
 }
+
 #body div.header {
   background-color: #71cec7;
   margin: 0 auto;
@@ -377,15 +379,15 @@ img {
 }
 #body div.header div h1 {
   color: #ffffff;
-  font-family: lato-regular-webfont;
-  font-size: 30px;
+  font-family:
+  font-size: 20px;
   font-weight: normal;
   line-height: 30px;
   margin: 0;
   padding: 28px 0 23px;
   text-align: center;
-  text-transform: uppercase;
 }
+
 #body div.body {
   background-color: #ebebed;
   margin: 0;
@@ -395,13 +397,33 @@ img {
   padding: 0;
   width: 100%;
 }
+
+/*about page wellness up sizing*/
 #body div.body img {
   display: block;
   left: 63%;
   margin: 0 auto 0 -507px;
   padding: 0;
   position: absolute;
-  width: 700px;
+}
+
+/*wellness up effect*/
+
+img.upimg{
+    width: auto;
+    height: 270px;
+    padding: 0 25px;
+    transition: 1s ease;
+  }
+
+img.upimg:hover{
+ -webkit-transform: scale(0.7);
+ -ms-transform: scale(0.7);
+ transform: scale(0.7);
+ transition: 1s ease;
+}
+
+  
 }
 #body div.footer {
   margin: 0 auto;
@@ -412,9 +434,11 @@ img {
 #body div.footer div.sidebar {
   background-color: #efedee;
   float: left;
-  margin: 0 10px 0 40px;
-  padding: 36px 0 34px;
-  width: 280px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: auto;
+
 }
 #body div.footer div.article {
   float: left;
@@ -430,6 +454,22 @@ img {
   text-align: center;
   width: 193px;
 }
+ /* image wellness tilt*/
+img.vigimg{
+  width: auto;
+  height: 270px;
+  padding: 0 25px;
+  transition: 1s ease;
+}
+
+img.vigimg:hover {
+  -webkit-transform: rotateZ(-5deg);
+    -ms-transform: rotateZ(-5deg);
+    transform: rotateZ(-5deg);
+    transition: 1s ease;
+  }
+
+
 #body div.footer div.sidebar p {
   display: block;
   line-height: 48px;
@@ -481,12 +521,14 @@ img {
 #body div.blog .featured p a:hover,
 #body.contact div.body div div p a:hover {
   color: #71cec7;
+  
 }
 #body div {
   margin: 0 auto;
   max-width: 960px;
-  padding: 7px 0 57px;
+  padding: 20px 0 57px;
 }
+
 #body div ul {
   display: inline-block;
   list-style: none outside none;
@@ -495,6 +537,7 @@ img {
   padding: 0 0 22px;
   width: 100%;
 }
+
 #body div ul li {
   float: left;
   margin: 0 10px;
@@ -523,6 +566,62 @@ img {
   text-align: left;
   width: 190px;
 }
+
+/*flipcard affect on dimensions*/
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  overflow:hidden;
+  border-radius: 10px;
+  perspective: 1000px;
+}
+
+.flipcard-content {
+  position:relative;
+  background-color:#fff;
+  padding:10px;
+  margin-top:-10px;
+}
+
+.flip-card img {
+  width: 10px;;
+  height: 100px;
+  border-radius:10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg); 
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius:10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  height:100%
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
 #body div ul li p a {
   color: #7a6666;
   font-family: roboto-regular-webfont;
@@ -533,12 +632,53 @@ img {
   padding: 0;
   text-decoration: underline;
 }
-#body div ul li img {
-  display: block;
-  margin: 0 auto 15px;
-  padding: 0;
-  width: auto;
+
+ /* adding here flip*/
+ .container {
+  width: 400px;
+  height: 300px;
+  perspective: 500px;
 }
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  width: 400px;
+  height: 300px;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-image: url(/images/imgonline-com-ua-resize-3t1wy4gMkp4GO.jpg);
+  width: 500px;
+  height: 220px;
+}
+
+.back {
+  background-image:url(/images/purplegirl.jpg) ;
+  transform: rotateY(180deg);
+  display: flex;
+  width: 500px;
+  height: 200px;
+  justify-content: center;
+}
+
+
+
 #body div ul li h2 {
   color: #eec0ce;
   font-family: lato-regular-webfont;
