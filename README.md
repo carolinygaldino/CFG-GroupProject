@@ -1,3 +1,3 @@
 # CFG-GroupProject
 
-![Weather  In Location](https://github.com/carolinygaldino/Weather-App/blob/main/Weather%20App/Images/Inf.png)
+![homepage](https://github.com/carolinygaldino/CFG-GroupProject/blob/main/CFG%20-%20GroupProject/images/homepage.png)
