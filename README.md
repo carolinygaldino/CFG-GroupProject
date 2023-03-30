@@ -6,7 +6,6 @@ During the Web development course in Code first girl, a group project was undert
 
 The project involved brainstorming ideas and deciding on a concept that the group would build the website around. The group then created wireframes and a project plan that was shared on GitHub. Each member of the team was assigned specific tasks, and the project was divided into manageable sections that each member could work on.
   
-![homepage](https://github.com/carolinygaldino/CFG-GroupProject/blob/main/CFG%20-%20GroupProject/images/homepage.png)  
 
 As work progressed, the team met regularly to discuss progress, issues, and next steps. Each member of the group reviewed each other's work to ensure consistency and quality. GitHub was used to merge changes, track issues, and to keep everyone updated with progress.
 
